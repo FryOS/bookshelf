@@ -71,13 +71,13 @@ function drawBook(article){
         buttonDelete.setAttribute('data', article);
         buttonDelete.onclick = deleteBook;
 
-        var buttonComment = document.createElement('button');
-        console.log(buttonComment);
-        buttonComment.className = "btn btn-primary";
-        buttonComment.innerHTML = 'Добавить комментарий';
-        buttonComment.setAttribute('data-target', '#addComment');
-        buttonComment.setAttribute('data-toggle','modal');
-        buttonComment.onclick = addComment;
+        // var buttonComment = document.createElement('button');
+        // console.log(buttonComment);
+        // buttonComment.className = "btn btn-primary";
+        // buttonComment.innerHTML = 'Добавить комментарий';
+        // buttonComment.setAttribute('data-target', '#addComment');
+        // buttonComment.setAttribute('data-toggle','modal');
+        // buttonComment.onclick = addComment;
 
 
         div.appendChild(cover);
@@ -85,7 +85,7 @@ function drawBook(article){
         div.appendChild(bookYear);
         div.appendChild(buttonEdit);
         div.appendChild(buttonDelete);
-        div.appendChild(buttonComment);
+        // div.appendChild(buttonComment);
 
         $('.book-panel').append(div);
     }
